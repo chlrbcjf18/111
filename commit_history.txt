@@ -15,114 +15,15 @@ jobs:
 
       - name: 100개 커밋 자동 생성 및 푸시
         run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          # 아래 두 줄의 닉네임과 이메일을 회원님의 실제 정보로 변경하세요!
+          git config --global user.name "ch1rbcjf18"  
+          git config --global user.email "chlrbcjf19@gmail.com"
           
           for i in {1..100}
           do
-            echo "My real commit number $i" >> real_commit_history.txt
-            git add real_commit_history.txt
-            git commit -m "Real automated commit $i"
+            echo "Final real commit number $i" >> final_history.txt
+            git add final_history.txt
+            git commit -m "Final verification commit $i"
           done
           
           git push
-Auto commit number 1
-Auto commit number 2
-Auto commit number 3
-Auto commit number 4
-Auto commit number 5
-Auto commit number 6
-Auto commit number 7
-Auto commit number 8
-Auto commit number 9
-Auto commit number 10
-Auto commit number 11
-Auto commit number 12
-Auto commit number 13
-Auto commit number 14
-Auto commit number 15
-Auto commit number 16
-Auto commit number 17
-Auto commit number 18
-Auto commit number 19
-Auto commit number 20
-Auto commit number 21
-Auto commit number 22
-Auto commit number 23
-Auto commit number 24
-Auto commit number 25
-Auto commit number 26
-Auto commit number 27
-Auto commit number 28
-Auto commit number 29
-Auto commit number 30
-Auto commit number 31
-Auto commit number 32
-Auto commit number 33
-Auto commit number 34
-Auto commit number 35
-Auto commit number 36
-Auto commit number 37
-Auto commit number 38
-Auto commit number 39
-Auto commit number 40
-Auto commit number 41
-Auto commit number 42
-Auto commit number 43
-Auto commit number 44
-Auto commit number 45
-Auto commit number 46
-Auto commit number 47
-Auto commit number 48
-Auto commit number 49
-Auto commit number 50
-Auto commit number 51
-Auto commit number 52
-Auto commit number 53
-Auto commit number 54
-Auto commit number 55
-Auto commit number 56
-Auto commit number 57
-Auto commit number 58
-Auto commit number 59
-Auto commit number 60
-Auto commit number 61
-Auto commit number 62
-Auto commit number 63
-Auto commit number 64
-Auto commit number 65
-Auto commit number 66
-Auto commit number 67
-Auto commit number 68
-Auto commit number 69
-Auto commit number 70
-Auto commit number 71
-Auto commit number 72
-Auto commit number 73
-Auto commit number 74
-Auto commit number 75
-Auto commit number 76
-Auto commit number 77
-Auto commit number 78
-Auto commit number 79
-Auto commit number 80
-Auto commit number 81
-Auto commit number 82
-Auto commit number 83
-Auto commit number 84
-Auto commit number 85
-Auto commit number 86
-Auto commit number 87
-Auto commit number 88
-Auto commit number 89
-Auto commit number 90
-Auto commit number 91
-Auto commit number 92
-Auto commit number 93
-Auto commit number 94
-Auto commit number 95
-Auto commit number 96
-Auto commit number 97
-Auto commit number 98
-Auto commit number 99
-Auto commit number 100
