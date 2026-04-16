@@ -16,7 +16,7 @@ jobs:
       - name: 100개 커밋 자동 생성 및 푸시
         run: |
           # 아래 두 줄의 닉네임과 이메일을 회원님의 실제 정보로 변경하세요!
-          git config --global user.name "ch1rbcjf18"  
+          git config --global user.name "chlrbcjf18"  
           git config --global user.email "chlrbcjf19@gmail.com"
           
           for i in {1..100}
