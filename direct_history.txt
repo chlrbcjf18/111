@@ -112,3 +112,4 @@ Direct commit 11
 Direct commit 12
 Direct commit 1
 Direct commit 2
+Direct commit 3
