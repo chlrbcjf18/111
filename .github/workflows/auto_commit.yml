@@ -1,0 +1,28 @@
+name: Auto Commit Generator
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  make-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: 100개 커밋 자동 생성 및 푸시
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          for i in {1..100}
+          do
+            echo "Auto commit number $i" >> commit_history.txt
+            git add commit_history.txt
+            git commit -m "Automated commit $i to complete GitHub requirements"
+          done
+          
+          git push
