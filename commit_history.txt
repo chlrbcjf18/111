@@ -17,7 +17,7 @@ jobs:
         run: |
           # 아래 두 줄의 닉네임과 이메일을 회원님의 실제 정보로 변경하세요!
           git config --global user.name "chlrbcjf18"  
-          git config --global user.email "chlrbcjf19@gmail.com"
+          git config --global user.email "129347535+chlrbcjf18@users.noreply.github.com"
           
           for i in {1..100}
           do
