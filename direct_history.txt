@@ -1,1 +1,2 @@
 Direct commit 1
+Direct commit 2
